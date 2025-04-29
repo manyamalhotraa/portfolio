@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manya Malhotra | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-padding-top: 80px; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      background: #f2f3f7;
+      color: #222;
+      line-height: 1.6;
+      padding-top: 60px;
+    }
+
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0; height: 60px;
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      padding: 8px 14px;
+      font-weight: 500;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    header a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    section {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+      background: white;
+      scroll-margin-top: 80px;
+    }
+
+    h1, h2 {
+      color: #1e3c72;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul { padding-left: 20px; }
+    li { font-size: 16px; }
+
+    a { color: #0077cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    #intro {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    #intro img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #ccc;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #e0ecff;
+      color: #1e3c72;
+      padding: 10px 18px;
+      border-radius: 5px;
+      font-weight: 500;
+      border: 1px solid #a5c4f7;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #cfe2ff;
+    }
+
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    /* Big images (projects, experience, certificates) */
+    .image-grid img {
+      max-width: 265px;
+      max-height: 265px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 5px;
+    }
+    
+
+    /* Smaller skill logos only */
+    .skill-grid img {
+      max-width: 70px;
+      max-height: 70px;
+    }
+
+
+    .hobby-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+      justify-content: center;
+    }
+
+    .hobby-icons div {
+      background: #ffffff80;
+      padding: 12px 18px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      font-weight: 500;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+      border-top: 3px solid #e0ecff;
+    }
+
+    footer a {
+      color: #f0f0f0;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-wrap: wrap;
+        padding: 8px;
+      }
+
+      header a {
+        margin: 6px;
+        font-size: 14px;
+        padding: 6px 10px;
+      }
+
+      #intro {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      #intro img {
+        margin: 0 auto;
+      }
+
+      .image-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-grid img {
+        width: 80%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="#intro">Intro</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#others">Achievements</a>
+ 
+</header>
+
+<section id="intro">
+  <img src="profileimg.jpeg" alt="Manya Malhotra" />
+  <div>
+    <h1>Manya Malhotra</h1>
+    <p>Data Analyst</p>
+    <p><strong>Student at Lovely Professional University (LPU), Punjab</strong></p>
+    <p>
+      <strong>Email:</strong> mmanya866@gmail.com<br>
+      <strong>GitHub:</strong> <a href="https://github.com/manyamalhotraa" target="_blank">github.com/manyamalhotraa</a><br>
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/manyamalhotraa/" target="_blank">LinkedIn Profile</a>
+    </p>
+
+    <a href="Manya_SPECIALISED.pdf" download class="download-btn">⬇️ Download CV</a>
+  </div>
+</section>
+
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+     Aspiring Data Analyst with experience in marketing analysis and a strong foundation in Python, My SQL , and problem-solving. Currently pursuing a B.Tech in Computer Science from Lovely Professional University, with hands-on experience in data analysis and market research. Passionate about leveraging data-driven insights to optimize business strategies and decision-making. Seeking an opportunity to apply analytical skills, adaptability, and creativity in a dynamic, data-driven environment. </p>
+  <p>
+    I believe in building smart and efficient solutions, collaborating with teams, and contributing meaningfully to any project or organization.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <strong>Amazon Shipping Analytics-Tableau Data Visualization</strong><br>
+    -Engineered a dynamic Tableau dashboard to evaluate Amazon shipping data, delivery efficiency, and <br>order
+trends.<br>
+-Crafted an interactive visualization to track logistics performance and optimize operational insights.<br>
+-Constructed a data-driven solution for comprehensive analysis of shipping metrics and trends.<br>
+    <a href="https://github.com/manyamalhotraa" target="_blank">GitHub Link</a>
+  </div>
+  
+  <div class="image-grid">
+    <img src="amazonshippinganalytics2.png" alt="Webcam 1">
+    <img src="amazonshippinganalytics.png" alt="Webcam 2">
+<div class="project">
+    <strong>Online Retail Sales Analysis For Asda Mart- Power Bi, Excel & Data Visualization</strong><br>
+    -Designed a Power BI dashboard to assess sales performance and derive actionable insights for Asda Mart.<br>
+-Executed data cleansing and visualization, improving decision-making through comprehensive reporting.<br>
+-Accomplished the project as part of the Tata Group Data Visualization course.
+.<br>
+    <a href="https://github.com/manyamalhotraa" target="_blank">GitHub Link</a>
+  </div>
+
+    <img src="asdamart.png" alt="Webcam 3">
+    <img src="asdamart2.jpg" alt="Webcam 4">
+<div class="project">
+    <strong>Banking Management System- Python & MySQL</strong><br>
+    -Developed to maintain a person’s account in a bank.<br>
+  -Created to automate core banking operations such as account management, transaction processing, <br> and  customer
+ information.<br>
+-Evolved to streamline banking processes and enhance efficiency.<br>
+<a href="https://github.com/manyamalhotraa" target="_blank">GitHub Link</a>
+  </div>
+
+    <img src="bank-management-system-using-python.png" alt="Webcam 5">
+    <img src="banking2.png" alt="Webcam 6">
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <h3>Internship:</h3>
+  <strong>Sales Analyst, Prova World Pvt.Ltd (Jan' 25-Present) :- </strong>
+  <ul>
+    <li>Sales Analysis & Strategy: Driving sales operations for India's first chicken chips brand, CHICKELZ, by analyzing
+market trends and performance metrics.
+ </li>
+    <li>Market Expansion & Data Insights: Identifying key gyms,distributors, and retail partners using data-driven insights to strengthen regional market presence.</li>
+    <li>Consumer Behavior & Relationship Management: Interpreting consumer trends, fostering strategic partnerships, and
+optimizing sales growth through analytical decision-making</li>
+  </ul>
+  <div class="image-grid">
+    <img src="sales.webp" alt="NGO 1">
+    <img src="customer.webp" alt="NGO 2">
+    <img src="dashboard.png" alt="NGO 3">
+   
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>Lovely Professional University</strong> – B.Tech CSE (Aug 2022 - Present)</li>
+    <li><strong>The Chintels School</strong> – Intermediate (2022): 92.7%</li>
+    <li><strong>The Chintels School</strong> – Matriculation (2020): 96.4%</li>
+  </ul>
+  
+  
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <h3>Programming Languages</h3>
+  <div class="image-grid skill-grid">
+    <img src="Python-logo-notext.svg.png" alt="Python">
+    <img src="cpp.png" alt="C++">
+    <img src="java.webp" alt="Java">
+    <img src="rlang.svg" alt="R">
+    <img src="html.jpg" alt="HTML">
+    <img src="css.png" alt="CSS">
+  </div>
+
+  <h3>Tools & Databases</h3>
+  <div class="image-grid skill-grid">
+    <img src="excellogo.jpeg" alt="Excel">
+    <img src="sqllogo.png" alt="MySQL">
+    <img src="powerbi.jpeg" alt="PowerBi">
+    <img src="tableaulogo.png" alt="Tableau">
+  </div>
+
+  <h3>Platforms & Libraries</h3>
+  <div class="image-grid skill-grid">
+    <img src="aws.png" alt="AWS">
+    <img src="linux.png" alt="Linux">
+    <img src="pandass.png" alt="Pandas">
+    <img src="seaborn.png" alt="Seaborn">
+    <img src="numpy.jpeg" alt="NumPy">
+  </div>
+</section>
+
+<section id="others">
+  <h2>Certificates & Achievements</h2>
+  <ul>
+    <li><strong>Certificates:</strong> AWS, Data Scientist, SQL for Data Science, Public Speaking, Excel Skills for Business Job Simulation from Goldman Sachs, Data Visualization from Tata Groups</li>
+    <li><strong>Achievements:</strong> National Level Debator, Achieved Contest rating: 1366 (Expert)from CodeForces.</li>
+  </ul>
+
+  <div class="image-grid">
+    <img src="impp.jpg" alt="AWS Certificate">
+    <img src="Screenshot 2025-04-28 114924.png">
+    <img src="Screenshot 2025-04-28 115701.png" alt="NPTEL ML Certificate">
+    <img src="gd.jpg" alt="Group Discussion Award">
+    <img src="debate.jpg" alt="Group Discussion Award">
+
+  </div>
+ <h3>Extra-Curricular Activities</h3>
+  <ul>
+
+    <li>Co-ordinated Music event of "One India" and "One World", Oversaw the planning and organization of one of the biggest event of the university "One India", Overall Spectra Winner in Music, Excelled in Group Discussion contests at university.</li>
+  </ul>
+  <div class="image-grid">
+    <img src="music.jpg" alt="Front End Dev Certificate">
+    <img src="oneindia.jpg" alt="Public Speaking Certificate">
+    <img src="spectra.jpg" alt="Public Speaking Certificate">
+
+
+  </div>
+
+
+
+
+<footer>
+  <h3>Manya Malhotra</h3>
+  <p>Thanks for visiting my portfolio! Let's connect:</p>
+  <div>
+    <a href="mailto:mmanya866@gmail.com" target="_blank">📧 Email</a>
+    <a href="https://github.com/manyamalhotraa" target="_blank">💻 GitHub</a>
+    <a href="https://www.linkedin.com/in/manyamalhotraa/" target="_blank">🔗 LinkedIn</a>
+  </div>
+  <p style="margin-top: 10px;">© 2025 Manya Malhotra. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
